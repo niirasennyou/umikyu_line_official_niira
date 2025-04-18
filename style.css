@@ -31,8 +31,13 @@ nav a {
   border-radius: 5px;
 }
 
-/* ホバーしたときに灰色背景にする */
-nav a:hover {
+/* 今いるページ（運行情報）は常に灰色 */
+nav a.selected {
+  background-color: #cccccc;
+}
+
+/* それ以外はホバーしたら灰色 */
+nav a:not(.selected):hover {
   background-color: #cccccc;
 }
 
