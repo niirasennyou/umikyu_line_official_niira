@@ -32,7 +32,7 @@ header {
   position: relative;
 }
 
-/* 今開いているページ（例：運行情報）のみ、上だけ囲う */
+/* 今開いているページ（例：運行情報）のみ、上だけ白い囲み */
 .menu-bar a.current::before {
   content: "";
   position: absolute;
@@ -40,10 +40,12 @@ header {
   left: 0;
   right: 0;
   height: 0.5em;
-  background-color: #eeeeee; /* 薄い灰色 */
+  background-color: white; /* 白い囲み */
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
+
+/* 他のリンクは特に囲みが表示されない */
 
 /* hoverしたらリンク全体が少し色つけたいならこれ追加してもOK */
 /*
