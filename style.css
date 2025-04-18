@@ -32,20 +32,14 @@ header {
   position: relative;
 }
 
-/* 今開いているページ（例：運行情報）のみ、上だけ白い囲み */
-.menu-bar a.current::before {
-  content: "";
-  position: absolute;
-  top: -0.6em;
-  left: 0;
-  right: 0;
-  height: 0.5em;
-  background-color: white; /* 白い囲み */
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+/* 今開いているページ（運行情報）のみ、文字を白い囲みで囲む */
+.menu-bar a.current {
+  border: 2px solid white; /* 文字の周りを囲む */
+  padding: 0.3em 0.6em; /* 囲みのスペースを調整 */
+  border-radius: 5px;
 }
 
-/* 他のリンクは特に囲みが表示されない */
+/* 他のリンクには囲みが表示されない */
 
 /* hoverしたらリンク全体が少し色つけたいならこれ追加してもOK */
 /*
