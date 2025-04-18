@@ -3,20 +3,21 @@ body {
   color: black;
   margin: 0;
   padding: 0;
+  background-color: white;
 }
 
 header {
-  background-color: #e0f7ff;
-  padding: 1em;
   text-align: center;
+  padding: 1em;
   font-size: 1.8em;
+  background-color: #e0f7ff;
   border-bottom: 1px solid #ccc;
 }
 
 nav {
   display: flex;
   justify-content: center;
-  gap: 1.5em;
+  gap: 2em;
   background-color: #f0f0f0;
   padding: 0.8em 0;
 }
@@ -26,28 +27,29 @@ nav a {
   color: black;
   font-weight: bold;
   font-size: 1em;
+  padding: 0.3em 0.6em;
 }
 
 nav a.kaikyuu {
   background-color: #cccccc;
-  padding: 0.3em 0.6em;
   border-radius: 5px;
 }
 
-main {
-  padding: 1.5em;
+.content-area {
+  background-color: #f0f0f0; /* 運行情報＋お知らせエリアの灰色背景 */
+  padding: 2em;
 }
 
 .info-box, .notice-box {
   background-color: #e0f7ff;
   border-radius: 12px;
-  padding: 1em 1.2em;
+  padding: 1.2em;
   margin-bottom: 2em;
 }
 
 .info-box p, .notice-box p {
   margin: 0.5em 0;
-  font-size: 1.1em;
+  font-size: 1.2em;
 }
 
 .notice-item {
@@ -61,9 +63,9 @@ main {
 
 footer {
   text-align: center;
+  padding: 1em;
   font-size: 0.9em;
-  color: black;
-  padding: 1em 0;
+  background-color: #f0f0f0;
   border-top: 1px solid #ccc;
-  margin-top: 2em;
+  margin-top: 1em;
 }
