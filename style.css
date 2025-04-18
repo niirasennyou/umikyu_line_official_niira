@@ -31,12 +31,13 @@ nav a {
   border-radius: 5px;
 }
 
-nav a.selected {
-  background-color: #cccccc; /* ← ここで運行情報だけ灰色背景 */
+/* ホバーしたときに灰色背景にする */
+nav a:hover {
+  background-color: #cccccc;
 }
 
 .content-area {
-  background-color: #f0f0f0; /* 運行情報とお知らせエリア */
+  background-color: #f0f0f0;
   padding: 2em;
 }
 
