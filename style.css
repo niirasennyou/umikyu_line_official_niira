@@ -28,15 +28,15 @@ nav a {
   font-weight: bold;
   font-size: 1em;
   padding: 0.3em 0.6em;
-}
-
-nav a.kaikyuu {
-  background-color: #cccccc;
   border-radius: 5px;
 }
 
+nav a.selected {
+  background-color: #cccccc; /* ← ここで運行情報だけ灰色背景 */
+}
+
 .content-area {
-  background-color: #f0f0f0; /* 運行情報＋お知らせエリアの灰色背景 */
+  background-color: #f0f0f0; /* 運行情報とお知らせエリア */
   padding: 2em;
 }
 
