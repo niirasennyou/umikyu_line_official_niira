@@ -1,51 +1,79 @@
-body {
-  font-family: sans-serif;
-  color: black;
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
+/* 基本フォント */
+body {
+  font-family: Arial, sans-serif;
+  color: black;
+  background-color: #f4f4f4;
+}
+
+/* ヘッダー部分 */
 header {
-  background: #ccc;
-  padding: 10px;
-  font-size: 24px;
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
 }
 
-.menu-bar {
-  background: #eee;
+/* ナビゲーションメニュー */
+nav.menu-bar {
+  background-color: #d3d3d3; /* 灰色の背景 */
   display: flex;
-  padding: 10px;
+  justify-content: space-around;
+  padding: 10px 0;
 }
 
-.menu-bar a {
-  margin-right: 20px;
+nav.menu-bar a {
   text-decoration: none;
   color: black;
-  padding: 5px 10px;
+  padding: 10px 15px;
+  font-weight: bold;
 }
 
-.menu-bar a.current {
-  background: #fff;
-  border-radius: 8px;
+nav.menu-bar a:hover {
+  background-color: #b0b0b0; /* ホバー時の色 */
 }
 
+nav.menu-bar a.current {
+  background-color: white; /* 現在選ばれているメニューの背景色 */
+  border: 2px solid #add8e6; /* 水色の枠線 */
+  border-radius: 5px;
+}
+
+/* コンテンツエリア */
 .content-area {
   padding: 20px;
+  background-color: white;
+  margin: 20px auto;
+  width: 80%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.info-box, .notice-box {
-  background: #ccf;
-  border-radius: 10px;
-  padding: 15px;
-  margin-bottom: 20px;
+.info-box {
+  margin: 20px;
 }
 
-.notice-item {
-  margin-top: 10px;
+.info-box h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
+.info-box p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* フッター部分 */
 footer {
-  background: #ccc;
+  background-color: #333;
+  color: white;
   text-align: center;
-  padding: 10px;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
