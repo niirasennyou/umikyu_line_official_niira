@@ -2,48 +2,62 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>新桜・海急公式サイト</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  新桜・海急公式サイト
-</header>
+  <header>
+    <h1>新桜・海急公式サイト</h1>
+  </header>
 
-<div class="menu-bar">
-  <a href="#運行情報" class="menu-item current selected">運行情報</a>
-  <a href="#アクセス案内" class="menu-item">主なアクセス案内</a>
-  <a href="#鉄道路線図" class="menu-item">路線図（鉄道）</a>
-  <a href="#バス路線図" class="menu-item">路線図（高速バス・路線バス）</a>
-  <a href="#海急の取り組み" class="menu-item">海急の取り組み</a>
-</div>
+  <nav class="menu-bar">
+    <a href="#運行情報" class="menu-item selected">運行情報</a>
+    <a href="#路線図鉄道" class="menu-item">路線図（鉄道）</a>
+    <a href="#路線図バス" class="menu-item">路線図（高速バス・路線バス）</a>
+    <a href="#海急の取り組み" class="menu-item">海急の取り組み</a>
+　　<a href="#主なアクセス案内" class="menu-item">主なアクセス案内</a>
+  </nav>
 
-<section class="content-area">
-
-  <div class="info-box">
-    <p>運行情報</p>
-    <p>現在、10分以上の遅延は発生していません</p>
+  <div id="運行情報" class="content-box selected">
+    <div class="info-box">
+      <h2>運行情報</h2>
+      <p>現在、10分以上の遅延は発生していません</p>
+    </div>
   </div>
 
-  <div class="notice-box">
-    <p>お知らせ</p>
-
-    <div class="notice-item">
-      <a href="news_20250413.html">2025.4.13 華島万博開催に伴う臨時バス運行について</a>
+  <div id="主なアクセス案内" class="content-box">
+    <div class="info-box">
+      <h2>主なアクセス案内</h2>
+      <p>お知らせ内容の例</p>
     </div>
-
-    <div class="notice-item">
-      <a href="#">2025.1.1 テストメアハエ</a>
-    </div>
-
   </div>
 
-</section>
+  <div id="路線図鉄道" class="content-box">
+    <div class="info-box">
+      <h2>路線図（鉄道）</h2>
+      <p>鉄道の路線図の内容</p>
+    </div>
+  </div>
 
-<footer>
-  2025 海急公式サイト
-</footer>
+  <div id="路線図バス" class="content-box">
+    <div class="info-box">
+      <h2>路線図（高速バス・路線バス）</h2>
+      <p>バスの路線図の内容</p>
+    </div>
+  </div>
+
+  <div id="海急の取り組み" class="content-box">
+    <div class="info-box">
+      <h2>海急の取り組み</h2>
+      <p>海急の取り組みの内容</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 海急公式サイト</p>
+  </footer>
 
 </body>
 </html>
