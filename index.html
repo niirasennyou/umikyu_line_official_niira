@@ -12,17 +12,27 @@
     <h1>新桜・海急公式サイト</h1>
   </header>
 
+  <!-- メニュー部分 -->
   <nav class="menu-bar">
     <a href="#運行情報" class="menu-item selected">運行情報</a>
+    <a href="#主なアクセス案内" class="menu-item">主なアクセス案内</a>
     <a href="#路線図鉄道" class="menu-item">路線図（鉄道）</a>
     <a href="#路線図バス" class="menu-item">路線図（高速バス・路線バス）</a>
     <a href="#海急の取り組み" class="menu-item">海急の取り組み</a>
   </nav>
 
+  <!-- コンテンツ部分 -->
   <div id="運行情報" class="content-box selected">
     <div class="info-box">
       <h2>運行情報</h2>
       <p>現在、10分以上の遅延は発生していません</p>
+    </div>
+  </div>
+
+  <div id="主なアクセス案内" class="content-box">
+    <div class="info-box">
+      <h2>主なアクセス案内</h2>
+      <p>詳細なアクセス情報がここに表示されます。</p>
     </div>
   </div>
 
@@ -59,12 +69,15 @@
         const targetId = item.getAttribute('href').substring(1);
         const targetElement = document.getElementById(targetId);
 
+        // 他のコンテンツを非表示にする
         document.querySelectorAll('.content-box').forEach(content => {
           content.classList.remove('selected');
         });
 
+        // 選択したコンテンツを表示
         targetElement.classList.add('selected');
 
+        // メニューの選択状態を更新
         menuItems.forEach(link => link.classList.remove('selected'));
         item.classList.add('selected');
       });
