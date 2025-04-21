@@ -33,6 +33,7 @@
     <div class="info-box">
       <h2>お知らせ</h2>
       <ul>
+        <!-- リダイレクト先をnews_20250413.htmlに設定 -->
         <li><a href="news_20250413.html">2025.4.13 華島万博開催に伴う臨時バス運行について</a></li>
         <li><a href="#">2025.1.1 テストメアハエ</a></li>
       </ul>
@@ -64,15 +65,6 @@
         item.classList.add('selected');
       });
     });
-
-    // リダイレクト処理（華島万博臨時バス運行について）
-    const busNewsLink = document.querySelector('a[href="news_20250413.html"]');
-    if (busNewsLink) {
-      busNewsLink.addEventListener('click', (event) => {
-        event.preventDefault();
-        window.location.href = "https://example.com/news_20250413"; // リダイレクト先URLを指定
-      });
-    }
   </script>
 
 </body>
