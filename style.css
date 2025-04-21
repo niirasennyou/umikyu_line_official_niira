@@ -1,73 +1,101 @@
-/* 共通スタイル */
 body {
   font-family: Arial, sans-serif;
+  color: black;
   margin: 0;
   padding: 0;
-  background-color: #f0f0f0;
-  color: #000;
+  background-color: white;
 }
 
-/* ヘッダー */
 header {
-  background-color: #2a78b3;
-  color: white;
   text-align: center;
-  padding: 20px 0;
+  padding: 1em;
+  font-size: 1.8em;
+  background-color: #e0f7ff;
+  border-bottom: 1px solid #ccc;
 }
 
-/* ナビゲーションバー */
 .menu-bar {
   display: flex;
-  justify-content: center; /* 中央寄せ */
-  background-color: #808080; /* 背景灰色 */
-  padding: 10px 0;
+  justify-content: center;
+  gap: 2em;
+  background-color: #dddddd;
+  padding: 0.8em 0;
 }
 
-.menu-item {
-  color: black;
+.menu-bar a {
   text-decoration: none;
-  padding: 10px 20px;
-  margin: 0 10px;
-  transition: background-color 0.3s ease, border 0.3s ease;
+  color: black;
+  font-weight: bold;
+  font-size: 1em;
+  padding: 0.3em 0.6em;
+  border-radius: 5px;
+  position: relative;
+}
+
+.menu-bar a.current {
+  border: 2px solid white;
+  padding: 0.3em 0.6em;
   border-radius: 5px;
 }
 
-/* 選択された項目に水色で塗りつぶされた背景を表示 */
-.menu-item.current {
-  background-color: #add8e6; /* 水色で背景を塗りつぶし */
+.content-area {
+  background-color: #f0f0f0;
+  padding: 2em;
 }
 
-/* ホバー時の色を水色に変更 */
-.menu-item:hover {
-  background-color: #add8e6; /* 水色背景 */
+.info-box, .notice-box {
+  background-color: #e0f7ff;
+  border-radius: 12px;
+  padding: 1.2em;
+  margin-bottom: 2em;
 }
 
-/* 選択された運行情報やお知らせの部分 */
-.info-box {
-  padding: 20px;
-  margin-bottom: 20px;
-  background-color: transparent; /* 初期状態では背景なし */
-  transition: background-color 0.3s ease;
+.info-box p, .notice-box p {
+  margin: 0.5em 0;
+  font-size: 1.2em;
 }
 
-/* 選択された運行情報やお知らせのボックスに水色背景を追加 */
-.info-box.selected {
-  background-color: #add8e6; /* 水色で塗りつぶし */
+.notice-item {
+  margin: 0.5em 0;
 }
 
-/* ハイライト部分 */
-.highlight {
-  background-color: #add8e6; /* 鍵かっこを囲む背景を水色に */
-  padding: 5px;
-  border-radius: 5px;
+.notice-item a {
+  text-decoration: none;
+  color: black;
+}
+
+.news-detail {
+  background-color: #e0f7ff;
+  border-radius: 12px;
+  padding: 2em;
+}
+
+.news-detail h1 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+.news-detail h2 {
+  font-size: 1.3em;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.news-detail h3 {
+  font-size: 1.1em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.news-detail ul {
+  padding-left: 1.5em;
 }
 
 footer {
   text-align: center;
-  background-color: #2a78b3;
-  color: white;
-  padding: 10px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  padding: 1em;
+  font-size: 0.9em;
+  background-color: #dddddd;
+  border-top: 1px solid #ccc;
+  margin-top: 1em;
 }
