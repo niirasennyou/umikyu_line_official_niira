@@ -1,51 +1,83 @@
-body {
-  font-family: sans-serif;
-  color: black;
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
+/* 基本フォント */
+body {
+  font-family: Arial, sans-serif;
+  color: black; /* 黒文字 */
+  background-color: #f4f4f4; /* 背景色 */
+}
+
+/* ヘッダー部分 */
 header {
-  background: #ccc;
-  padding: 10px;
+  background-color: #333; /* ヘッダーの背景色 */
+  color: white; /* 白文字 */
+  padding: 10px 0;
+  text-align: center; /* 中央寄せ */
   font-size: 24px;
+  font-weight: bold;
 }
 
-.menu-bar {
-  background: #eee;
+/* ナビゲーションメニュー */
+nav.menu-bar {
+  background-color: #d3d3d3; /* 灰色の背景 */
   display: flex;
-  padding: 10px;
+  justify-content: space-around;
+  padding: 10px 0;
+  text-align: center; /* 中央寄せ */
 }
 
-.menu-bar a {
-  margin-right: 20px;
+nav.menu-bar a {
   text-decoration: none;
-  color: black;
-  padding: 5px 10px;
+  color: black; /* 文字色を黒に */
+  padding: 10px 15px;
+  font-weight: bold;
+  text-align: center; /* 文字を中央に */
 }
 
-.menu-bar a.current {
-  background: #fff;
-  border-radius: 8px;
+nav.menu-bar a:hover {
+  background-color: #b0b0b0; /* ホバー時の色（少し濃い灰色） */
 }
 
+nav.menu-bar a.current {
+  background-color: white; /* 現在選ばれているメニューの背景色 */
+  border: 2px solid #ADD8E6; /* 水色の枠線 */
+  border-radius: 5px;
+}
+
+/* コンテンツエリア */
 .content-area {
   padding: 20px;
+  background-color: white;
+  margin: 20px auto;
+  width: 80%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.info-box, .notice-box {
-  background: #ccf;
-  border-radius: 10px;
-  padding: 15px;
-  margin-bottom: 20px;
+.info-box {
+  margin: 20px;
 }
 
-.notice-item {
-  margin-top: 10px;
+.info-box h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
+.info-box p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* フッター部分 */
 footer {
-  background: #ccc;
+  background-color: #333; /* フッターの背景色 */
+  color: white; /* 白文字 */
   text-align: center;
-  padding: 10px;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
