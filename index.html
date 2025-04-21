@@ -64,6 +64,15 @@
         item.classList.add('selected');
       });
     });
+
+    // リダイレクト処理（華島万博臨時バス運行について）
+    const busNewsLink = document.querySelector('a[href="news_20250413.html"]');
+    if (busNewsLink) {
+      busNewsLink.addEventListener('click', (event) => {
+        event.preventDefault();
+        window.location.href = "https://example.com/news_20250413"; // リダイレクト先URLを指定
+      });
+    }
   </script>
 
 </body>
