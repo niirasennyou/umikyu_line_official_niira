@@ -14,10 +14,10 @@
 
   <nav class="menu-bar">
     <a href="#運行情報" class="menu-item selected">運行情報</a>
+    <a href="#主なアクセス案内" class="menu-item">主なアクセス案内</a>
     <a href="#路線図鉄道" class="menu-item">路線図（鉄道）</a>
     <a href="#路線図バス" class="menu-item">路線図（高速バス・路線バス）</a>
     <a href="#海急の取り組み" class="menu-item">海急の取り組み</a>
-　　<a href="#主なアクセス案内" class="menu-item">主なアクセス案内</a>
   </nav>
 
   <div id="運行情報" class="content-box selected">
@@ -58,6 +58,30 @@
   <footer>
     <p>&copy; 2025 海急公式サイト</p>
   </footer>
+
+  <!-- 各ページへのリンク -->
+  <script>
+    const menuItems = document.querySelectorAll('.menu-item');
+    menuItems.forEach(item => {
+      item.addEventListener('click', (event) => {
+        event.preventDefault(); // デフォルトのリンク動作を無効化
+        const targetId = item.getAttribute('href').substring(1); // #以降のIDを取得
+        const targetElement = document.getElementById(targetId);
+
+        // 全てのコンテンツボックスを非表示
+        document.querySelectorAll('.content-box').forEach(content => {
+          content.classList.remove('selected');
+        });
+
+        // 対象のコンテンツボックスを表示
+        targetElement.classList.add('selected');
+
+        // メニューの選択状態を変更
+        menuItems.forEach(link => link.classList.remove('selected'));
+        item.classList.add('selected');
+      });
+    });
+  </script>
 
 </body>
 </html>
