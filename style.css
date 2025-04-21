@@ -23,10 +23,11 @@ header {
   text-decoration: none;
   color: #333;
   padding: 10px;
+  transition: background-color 0.3s;
 }
 
 .menu-item.selected {
-  background-color: #d3d3d3;
+  background-color: #a0c8ff; /* 水色の背景 */
   font-weight: bold;
 }
 
