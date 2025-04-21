@@ -18,7 +18,7 @@ header {
   display: flex;
   justify-content: center;
   gap: 2em;
-  background-color: #dddddd; /* バー全体の背景色を灰色に統一 */
+  background-color: #dddddd;
   padding: 0.8em 0;
 }
 
@@ -32,21 +32,11 @@ header {
   position: relative;
 }
 
-/* 今開いているページ（運行情報）のみ、文字を白い囲みで囲む */
 .menu-bar a.current {
-  border: 2px solid white; /* 文字の周りを囲む */
-  padding: 0.3em 0.6em; /* 囲みのスペースを調整 */
+  border: 2px solid white;
+  padding: 0.3em 0.6em;
   border-radius: 5px;
 }
-
-/* 他のリンクには囲みが表示されない */
-
-/* hoverしたらリンク全体が少し色つけたいならこれ追加してもOK */
-/*
-.menu-bar a:hover {
-  background-color: #cccccc;
-}
-*/
 
 .content-area {
   background-color: #f0f0f0;
@@ -74,11 +64,22 @@ header {
   color: black;
 }
 
+.news-detail {
+  background-color: #e0f7ff;
+  border-radius: 12px;
+  padding: 2em;
+}
+
+.news-detail h1 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
 footer {
   text-align: center;
   padding: 1em;
   font-size: 0.9em;
-  background-color: #dddddd; /* 下のバーも背景統一 */
+  background-color: #dddddd;
   border-top: 1px solid #ccc;
   margin-top: 1em;
 }
