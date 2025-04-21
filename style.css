@@ -1,3 +1,4 @@
+/* 共通スタイル */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -31,35 +32,30 @@ header {
   border-radius: 5px;
 }
 
-/* 選択されたリンクに水色の枠をつける */
+/* 選択された項目に水色で塗りつぶされた背景を表示 */
 .menu-item.current {
-  background-color: #fff;
-  border: 2px solid #add8e6; /* 水色の枠線 */
+  background-color: #add8e6; /* 水色で背景を塗りつぶし */
 }
 
-/* ホバー時に背景色を水色に変更 */
+/* ホバー時の色を水色に変更 */
 .menu-item:hover {
   background-color: #add8e6; /* 水色背景 */
 }
 
-/* コンテンツエリア */
-.content-area {
-  padding: 20px;
-  margin: 20px;
-  background-color: #fff;
-}
-
+/* 選択された運行情報やお知らせの部分 */
 .info-box {
+  padding: 20px;
   margin-bottom: 20px;
-  border: 2px solid transparent;
-  transition: border-color 0.3s ease; /* 境界線のアニメーション */
+  background-color: transparent; /* 初期状態では背景なし */
+  transition: background-color 0.3s ease;
 }
 
-/* 選択状態の運行情報やお知らせの囲みを水色に */
+/* 選択された運行情報やお知らせのボックスに水色背景を追加 */
 .info-box.selected {
-  border-color: #add8e6; /* 水色の境界線 */
+  background-color: #add8e6; /* 水色で塗りつぶし */
 }
 
+/* ハイライト部分 */
 .highlight {
   background-color: #add8e6; /* 鍵かっこを囲む背景を水色に */
   padding: 5px;
