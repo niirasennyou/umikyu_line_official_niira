@@ -7,14 +7,14 @@
 /* 基本フォント */
 body {
   font-family: Arial, sans-serif;
-  color: black;
-  background-color: #f4f4f4;
+  color: black; /* 黒文字 */
+  background-color: #f4f4f4; /* 背景色 */
 }
 
 /* ヘッダー部分 */
 header {
-  background-color: #333;
-  color: white;
+  background-color: #333; /* ヘッダーの背景色 */
+  color: white; /* 白文字 */
   padding: 10px 0;
   text-align: center;
 }
@@ -29,13 +29,13 @@ nav.menu-bar {
 
 nav.menu-bar a {
   text-decoration: none;
-  color: black;
+  color: black; /* 文字色を黒に */
   padding: 10px 15px;
   font-weight: bold;
 }
 
 nav.menu-bar a:hover {
-  background-color: #b0b0b0; /* ホバー時の色 */
+  background-color: #b0b0b0; /* ホバー時の色（少し濃い灰色） */
 }
 
 nav.menu-bar a.current {
@@ -69,8 +69,8 @@ nav.menu-bar a.current {
 
 /* フッター部分 */
 footer {
-  background-color: #333;
-  color: white;
+  background-color: #333; /* フッターの背景色 */
+  color: white; /* 白文字 */
   text-align: center;
   padding: 10px 0;
   position: fixed;
