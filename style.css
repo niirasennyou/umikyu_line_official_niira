@@ -1,3 +1,4 @@
+/* 共通スタイル */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -31,16 +32,17 @@ header {
   border-radius: 5px;
 }
 
-.menu-item:hover {
-  background-color: #add8e6; /* ホバー時の水色 */
-}
-
-/* 現在選択されている項目に白い枠を表示 */
+/* クリック時に水色の枠をつける */
 .menu-item.current {
-  background-color: #add8e6; /* 現在選択されているボタンの背景色を水色に */
-  border: 2px solid #add8e6; /* 白枠を表示 */
+  background-color: #fff;
+  border: 2px solid #add8e6; /* 水色の枠線 */
 }
 
+.menu-item:hover {
+  background-color: #add8e6; /* ホバー時に水色背景 */
+}
+
+/* コンテンツエリア */
 .content-area {
   padding: 20px;
   margin: 20px;
