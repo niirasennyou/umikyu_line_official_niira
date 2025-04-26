@@ -7,57 +7,48 @@ body {
 }
 
 header {
-  background-color: white;
-  padding: 1rem;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
+  padding: 1rem;
+  background-color: white;
 }
 
-nav {
+.top-nav, .bottom-nav {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  background-color: white;
+  background-color: lightgray;
   padding: 1rem;
-  flex-wrap: wrap;
+  width: 100%;  /* 画面全体の幅に広げる */
+  box-sizing: border-box; /* 幅の設定に余白も含める */
 }
 
-.nav-item {
+.nav-link {
   text-decoration: none;
   color: black;
   padding: 0.5rem 1rem;
 }
 
 .selected {
-  background-color: #e0e0e0; /* 選択中だけグレー */
-  border-radius: 5px;
-}
-
-.highlighted {
-  background-color: gray;
-  border-radius: 5px;
-  color: black;
+  font-weight: bold;
+  border-bottom: 2px solid black;
 }
 
 main {
-  padding: 1rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .info-box {
-  margin-bottom: 2rem;
-}
-
-.box {
-  background-color: #e0f7fa; /* 水色 */
+  background-color: #e0f7fa;
   border-radius: 10px;
   padding: 1rem;
   margin-top: 1rem;
-}
-
-.box a {
-  text-decoration: none;
-  color: black;
+  max-width: 800px;
+  width: 100%;
 }
 
 footer {
