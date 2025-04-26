@@ -1,0 +1,59 @@
+body {
+  font-family: sans-serif;
+  color: black;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+header {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem;
+  background-color: white;
+}
+
+.top-nav, .bottom-nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background-color: lightgray;
+  padding: 1rem;
+  width: 100%;  /* 画面全体の幅に広げる */
+  box-sizing: border-box; /* 幅の設定に余白も含める */
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  padding: 0.5rem 1rem;
+}
+
+.selected {
+  font-weight: bold;
+  border-bottom: 2px solid black;
+}
+
+main {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-box {
+  background-color: #e0f7fa;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-top: 1rem;
+  max-width: 800px;
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: white;
+  margin-top: 2rem;
+}
